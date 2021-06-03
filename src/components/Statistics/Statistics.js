@@ -17,6 +17,10 @@ const Statistics = ({ title, stats }) => (
   </section>
 );
 
+Statistics.defaultProps = {
+  title: ''
+}
+
 Statistics.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
