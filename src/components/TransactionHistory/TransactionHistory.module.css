@@ -1,0 +1,22 @@
+.transactions {
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 1px 1px 5px 1px rgb(236, 233, 9);
+}
+
+.tr {
+  background-color: lawngreen;
+}
+
+th,
+td {
+  padding: 5px;
+  border: 1px solid black;
+  text-align: center;
+  color: rgb(102, 71, 117);
+}
+
+tr:nth-child(2n) {
+  background-color: rgb(245, 243, 131);
+}
