@@ -1,12 +1,12 @@
 import React from 'react';
-import SocialProfile from './components/SocialProfile/SocialProfile';
+import Profile from './components/Profile/Profile';
 import Statistics from './components/Statistics/Statistics';
 import FriendList from "./components/FriendList/FriendList";
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
 import 
   user
-  from './components/SocialProfile/user.json';
+  from './components/Profile/user.json';
 import statisticalData from './components/Statistics/statistical-data.json';
 import friends from './components/FriendList/friends.json';
 import items from './components/TransactionHistory/transactions.json';
@@ -15,7 +15,7 @@ import items from './components/TransactionHistory/transactions.json';
 
 const App = () => (
   <div>
-    <SocialProfile
+    <Profile
       name={user.name}
       tag={user.tag}
       location={user.location}

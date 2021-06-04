@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './SocialProfile.module.css';
+import styles from './Profile.module.css';
 import defaultImg from './defaultImg.jpg';
 
-const SocialProfile = ({ name, tag, location, avatar, stats }) => (
+const Profile = ({ name, tag, location, avatar, stats }) => (
   <div className={styles.profile}>
     <div className={styles.description}>
       <img src={avatar} alt="Аватар пользователя" className={styles.avatar} />
@@ -29,11 +29,11 @@ const SocialProfile = ({ name, tag, location, avatar, stats }) => (
   </div>
 );
 
-SocialProfile.defaultProps = {
+Profile.defaultProps = {
   avatar: defaultImg,
 };
 
-SocialProfile.propTypes = {
+Profile.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
@@ -45,4 +45,4 @@ SocialProfile.propTypes = {
   }).isRequired,
 };
 
-export default SocialProfile;
+export default Profile;
